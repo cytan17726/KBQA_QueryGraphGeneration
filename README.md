@@ -1,4 +1,4 @@
-# 代码和数据整理中，请稍候
+# [代码和数据整理中，请稍候](https://github.com/cytan17726/KBQA_QueryGraphGeneration/tree/cytan)
 
 ## 基本目录结构
 
@@ -7,8 +7,16 @@ config 参数
 data 相关数据
     train_data
         graph_ranker: 相关排序模型的训练数据
-            
+
 model 训练的模型
+
+排序模型-当时训练的
+
+CCKS2019: Luo Ours Yhi
+
+CCKS2019_Comp
+
+__Luo__ __Ours__ __Yhi__
 
 ## 依赖
 
@@ -24,9 +32,12 @@ model 训练的模型
 - `pymysql`: 1.0.2
 - `jieba`: 0.42.1
 
+数据下载地址(百度网盘):
+[链接](https://pan.baidu.com/s/1UzczuOdBNAwjP9h8Sf0cjA), 提取码: vbab
+
 ## 快速复现实验结果
 
-我们提供了生成的查询图候选，仅需排序即可
+我们提供了生成的查询图候选，经排序即可得到
 
 ## 逐步
 
@@ -40,13 +51,19 @@ Mysql pkuorder和pkubase
 
 ### 查询图生成
 
+cd src/build_query_graph
+Yih
+Luo
+Our
+
 ### 查询图排序
 
-序列化
+序列化: cd src/querygraph2seq
 
-构建训练数据
+构建训练数据: cd src/build_model_data
 
-排序
+排序: cd 
 
 ### 结果评价
 
+cd src/eda
