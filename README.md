@@ -2,7 +2,7 @@
 
 ## 基本目录结构
 
-config 参数
+config 若干参数
 
 data 相关数据
     train_data
@@ -10,11 +10,7 @@ data 相关数据
 
 model 训练的模型
 
-排序模型-当时训练的
-
-CCKS2019: Luo Ours Yhi
-
-CCKS2019_Comp
+src 相关代码
 
 __Luo__ __Ours__ __Yhi__
 
@@ -29,11 +25,12 @@ __Luo__ __Ours__ __Yhi__
 其余依赖:
 
 - `pytorch_pretrained_bert`: 0.6.2
-- `tqdm`
 - `scikit-learn`: 0.20.4
 - `xgboost`: 1.4.1
 - `pymysql`: 1.0.2
 - `jieba`: 0.42.1
+- `tqdm`
+- `yaml`
 
 训练的模型和部分中间结果:
 [下载地址(百度网盘)](https://pan.baidu.com/s/1UzczuOdBNAwjP9h8Sf0cjA), 提取码: vbab
@@ -48,6 +45,20 @@ __Luo__ __Ours__ __Yhi__
 - 训练数据
 - 排序模型
 
+我们在本地评估性能结果如下:
+
+|查询图生成性能|CCKS2019|CCKS2019-Comp|
+|:---:|:---:|:---:|
+|Yih等|85.40|71.07|
+|Luo等|86.49|71.93|
+|Ours|89.47|86.91|
+
+|KBQA性能|CCKS2019|CCKS2019-Comp|
+|:---:|:---:|:---:|
+|Yih等|72.43|59.50|
+|Luo等|73.55|60.66|
+|Ours|73.86|73.39|
+
 ## 逐步
 
 ### 数据库构建(TODO)
@@ -56,7 +67,7 @@ Mysql pkuorder和pkubase
 
 ### 预处理
 
-包括 实体链接、关系预测，这里直接提供我们生成和训练的结果
+包括 实体链接、关系预测，这里提供我们生成和训练的结果,[见网盘]
 
 ### 查询图生成
 
@@ -87,11 +98,13 @@ python querygraph_to_seq.py
 排序: `cd src/model_train`
 `python train_listwise_multi_types_1.py`
 
-### 结果评价
+### 结果评价[完成整理]
+
+需要自行修改config文件, 位置在/config/eda/eval_test.yaml
 
 ```
 cd src/eda
-python multiType_error_analysis.py
+bash eval_test.sh
 ```
 
 若有更多问题可联系 cytan17726@stu.suda.edu.cn
