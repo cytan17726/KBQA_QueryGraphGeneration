@@ -12,8 +12,6 @@ model 训练的模型
 
 src 相关代码
 
-__Luo__ __Ours__ __Yhi__
-
 ## Setups
 
 代码在以下环境中测试:
@@ -39,13 +37,14 @@ __Luo__ __Ours__ __Yhi__
 
 我们在网盘中提供了各阶段性结果，包括：
 
-- 数据
-- 预处理数据（关系预测提供训练后的模型）
-- 查询图生成
-- 训练数据
-- 排序模型
+- 新构建KBQA数据(ch2,后续开放)
+- 预处理数据与模型(ch3.1, 关系预测提供训练后的模型)
+- 查询图生成-阶段结构(ch3.2)
+- 查询图排序-训练数据(ch3.3)
+- 查询图排序-已训练模型(ch3.3)
+- 查询图排序-打分结果(ch3.3)
 
-我们在本地评估性能结果如下:
+我们在本地评估性能结果如下,可作为您的参考:
 
 |查询图生成性能|CCKS2019|CCKS2019-Comp|
 |:---:|:---:|:---:|
@@ -59,44 +58,66 @@ __Luo__ __Ours__ __Yhi__
 |Luo等|73.55|60.66|
 |Ours|73.86|73.39|
 
-## 逐步
 
-### 数据库构建(TODO)
+### 0 数据库构建(TODO)
 
-Mysql pkuorder和pkubase
+您可以基于[CCKS2019 中文知识图谱问答](https://www.biendata.xyz/competition/ccks_2019_6/data/)提供的数据, 构建KB
+本系统使用Mysql数据库进行KB的存储与检索
+更多详细信息后续添加完善
 
-### 预处理
+### 1 预处理
 
-包括 实体链接、关系预测，这里提供我们生成和训练的结果,[见网盘]
+包括 节点识别、关系预测
 
-### 查询图生成
+    节点识别, 提供实体词节点的识别结果, 其余内嵌在代码中
+    关系预测提供已训练模型
 
+### 2 查询图生成(todo 修改传参方式)
+修改文件内的参数(对应 CCKS2019和CCKS2019-Comp两个数据集上的表现)
 cd src/build_query_graph
 
-Yih
+- Yih
 
-- `nohup python main_Yhi_for_train.py > log/ccks2019_Yhi_train.log&`
+```
+nohup python main_Yih_for_test.py > log/CCKS2019_Yih_test.log&
+nohup python main_Yih_for_test.py > log/CCKS2019_Comp_Yih_test.log&
+```
 
-Luo
+- Luo
 
-- `nohup python main_STAGG_for_test_0308.py >log/Luo_test.log&`
+```
+nohup python main_Luo_for_test.py > log/CCKS2019_Luo_test.log&
+nohup python main_Luo_for_test.py > log/CCKS2019_Comp_Luo_test.log&
+```
 
-Our
+- Our
 
-- `nohup python main_based_filter_rel_for_test_ccksOnly.py >log/CCKS2019_Ours_test.log&`
+```
+nohup python main_based_filter_rel_for_test.py > log/CCKS2019_Ours_test.log&
+nohup python main_based_filter_rel_for_test.py > log/CCKS2019_Comp_Ours_test.log&
+```
 
-### 查询图排序
 
-序列化:
+### 3 查询图排序
+
+1. 序列化[TODO]
 ```
 cd src/querygraph2seq
 python querygraph_to_seq.py
 ```
 
-构建训练数据: `cd src/build_model_data`
+2. 构建训练数据[TODO]
+```
+cd src/build_model_data
+python build_train_data_for_analysis.py
+python build_test_data.py
+```
 
-排序: `cd src/model_train`
-`python train_listwise_multi_types_1.py`
+3. 训练排序模型[TODO-整理各部分的对应参数]
+```
+cd src/model_train
+python train_listwise_multi_types_1.py
+```
 
 ### 结果评价[完成整理]
 
