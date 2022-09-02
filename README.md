@@ -32,7 +32,7 @@ src 相关代码
 - `tqdm`
 - `yaml`
 
-训练的模型和部分中间结果(数据传输中 网卡请见谅...):
+训练的模型和部分中间结果:
 [下载地址(百度网盘)](https://pan.baidu.com/s/1UzczuOdBNAwjP9h8Sf0cjA), 提取码: vbab
 
 ## 快速复现实验结果
