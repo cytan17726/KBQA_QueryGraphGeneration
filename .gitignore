@@ -1,7 +1,5 @@
 data/*
 model/*
 src/build_model_data/*
-src/build_query_graph/*
 src/model_train/*
-src/querygraph2seq/*
 README_raw.md

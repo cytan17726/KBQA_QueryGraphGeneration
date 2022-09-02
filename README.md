@@ -112,15 +112,15 @@ cd src/querygraph2seq
 python querygraph_to_seq.py
 ```
 
-2. 构建训练数据[TODO]
+2. 构建训练数据
 ```
 cd src/build_model_data
-python build_train_data_for_analysis.py
-python build_test_data.py[sure]
+python build_train_data_for_analysis.py [非必要,已经提供训练数据]
+python build_test_data.py[将test候选查询图转化为模型输入格式]
 ```
 
-3. 训练排序模型[TODO-整理各部分的对应参数]
-[非必要步骤]
+3. 训练排序模型
+[非必要步骤,我们于网盘中提供了已训练模型]
 ```
 cd src/model_train
 python train_listwise_multi_types_1.py
@@ -128,7 +128,6 @@ python train_listwise_multi_types_1.py
 
 4. 候选打分
 
-(重新进行打分)
 对应脚本存放在 /src/model_train/bash 目录,可按需修改config中参数(/config/eda)
 
 ```

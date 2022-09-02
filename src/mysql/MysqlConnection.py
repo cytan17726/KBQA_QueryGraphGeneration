@@ -8,7 +8,7 @@ import copy
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
 from src.QueryGraph import QueryGraph
-from config.MysqlConfig import CCKSConfig, NLPCCConfig
+from config.MysqlConfig import CCKSConfig
 from sqlalchemy import create_engine
 from src.utils.data_processing import getFloat
 

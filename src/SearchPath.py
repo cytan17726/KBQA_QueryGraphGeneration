@@ -19,9 +19,7 @@ print(BASE_DIR)
 from src.mysql.MysqlConnection import MysqlConnection
 from src.QueryGraph import QueryGraph
 from src.querygraph2seq.querygraph_to_seq import getMainPathSeq, getConstrainPathSeq
-from config.MysqlConfig import CCKSConfig, CCKSConfig2021
-# from config.MysqlConfig import CCKSConfig, CCKSConfig2021, CCKSConfig2022
-# from src.build_query_graph.main_based_filter_rel_for_complex_que import preprocessRel
+from config.MysqlConfig import CCKSConfig
 from src.utils.data_processing import preprocessRel
 
 # ccksConfig = CCKSConfig()
@@ -40,7 +38,7 @@ def mergeForSameAnswer(queryGraphs: QueryGraph):
 
 
 class SearchPath(object):
-    def __init__(self,ccksConfig = CCKSConfig2021()) -> None:
+    def __init__(self,ccksConfig = CCKSConfig()) -> None:
         self.mysqlConnection = MysqlConnection(ccksConfig)
 
     def updateAvailableEntityIds(self, availableEntityIds, pos, conflictMatrix):
