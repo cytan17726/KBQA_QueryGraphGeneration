@@ -1,6 +1,6 @@
 # [面向知识图谱问答的查询图生成方法](https://github.com/cytan17726/KBQA_QueryGraphGeneration/tree/cytan)
 
-代码和数据整理中，请稍候
+代码和数据整理中，请稍候(在重新测试...在肝了在肝了)
 
 ## 基本目录结构
 
