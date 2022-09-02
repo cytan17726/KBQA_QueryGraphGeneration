@@ -1030,20 +1030,44 @@ def generateTestSeqNoSparql(normElement):
 
 
 if __name__ == "__main__":
-    '''转化train'''
-    '''转化dev和test'''
-    # CCKS2019
-    fileName = BASE_DIR + '/data/dataset/CCKS2019/test.txt'
-    candsFile = BASE_DIR + '/data/candidates/CCKS2019_Luo_test_top300000_0429DNS_100_1000_10000_100000_1000.txt'
-    seqsFile = BASE_DIR + '/data/candidates/seq/CCKS2019_Luo_test.seq'
+    '''转化train''' # TODO
+    # generateSeqNoSparqlByItemsForMultiTypes(normElement)
 
+    '''转化dev和test'''
+    # # CCKS2019
+    # Luo
+    # fileName = BASE_DIR + '/data/dataset/CCKS2019/test.txt'
+    # candsFile = BASE_DIR + '/data/candidates/CCKS2019_Luo_test_top300000_0429DNS_100_1000_10000_100000_1000.txt'
+    # seqsFile = BASE_DIR + '/data/candidates/seq/CCKS2019_Luo_test.seq'
+    
+    # Yih 
+    # fileName = BASE_DIR + '/data/dataset/CCKS2019/test.txt'
+    # candsFile = BASE_DIR + '/data/candidates/CCKS2019_Yhi_test_top300000_0429DNS_100_1000_10000_100000_1000.txt'
+    # seqsFile = BASE_DIR + '/data/candidates/seq/CCKS2019_Yih_test.seq'
+
+    # Ours
+    # fileName = BASE_DIR + '/data/dataset/CCKS2019/test.txt'
+    # candsFile = BASE_DIR + '/data/candidates/CCKS2019_Ours_test_2000_0429DNS_100_1000_10000_100000_1000.txt'
+    # seqsFile = BASE_DIR + '/data/candidates/seq/CCKS2019_Ours_test.seq'
+
+    ## CCKS2019-Comp
+    # Yih
+    # fileName = BASE_DIR + '/data/dataset/CCKS2019/test.txt'
+    # candsFile = BASE_DIR + '/data/candidates/CCKS2019_Comp_Yhi_test_top300000_0429DNS_100_1000_10000_100000_1000.txt'
+    # seqsFile = BASE_DIR + '/data/candidates/seq/CCKS2019_Comp_Yih_test.seq'
+
+    # Luo
+    # fileName = BASE_DIR + '/data/dataset/CCKS2019/test.txt'
+    # candsFile = BASE_DIR + '/data/candidates/CCKS2019_Comp_Luo_test_top300000_0429DNS_100_1000_10000_100000_1000.txt'
+    # seqsFile = BASE_DIR + '/data/candidates/seq/CCKS2019_Comp_Luo_test.seq'
+
+    # Ours
     fileName = BASE_DIR + '/data/dataset/CCKS2019/test.txt'
-    candsFile = BASE_DIR + '/data/candidates/CCKS2019_Yhi_test_top300000_0429DNS_100_1000_10000_100000_1000.txt'
-    seqsFile = BASE_DIR + '/data/candidates/seq/CCKS2019_Yih_test.seq'
+    candsFile = BASE_DIR + '/data/candidates/CCKS2019_Comp_Ours_test_2000_0429DNS_100_1000_10000_100000_1000.txt'
+    seqsFile = BASE_DIR + '/data/candidates/seq/CCKS2019_Comp_Ours_test.seq'
 
     normElement = False
-    # generateSeqNoSparqlByItemsForMultiTypes(normElement, dataType = 'train')
-    # generateSeqNoSparqlByItemsForMultiTypesEval(normElement, dataType = 'dev')
+    
     generateSeqNoSparqlByItemsForMultiTypesEval(fileName, candsFile, seqsFile, normElement)    # dev和test使用
     ##########################################################
     

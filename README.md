@@ -106,21 +106,24 @@ nohup python main_based_filter_rel_for_test.py > log/CCKS2019_Comp_Ours_test.log
 
 ### 3 查询图排序(进行中)
 
-1. 序列化[TODO-test和valid已完成]
+1. 序列化
+需要调整文件中的对应参数(参考注释)
 ```
 cd src/querygraph2seq
 python querygraph_to_seq.py
 ```
 
-2. 构建训练数据
+2. 转化为模型输入数据
+
 ```
 cd src/build_model_data
-python build_train_data_for_analysis.py [非必要,已经提供训练数据]
 python build_test_data.py[将test候选查询图转化为模型输入格式]
+python build_train_data_for_analysis.py [非必要,已经提供训练数据]
 ```
 
 3. 训练排序模型
-[非必要步骤,我们于网盘中提供了已训练模型]
+
+- 非必要步骤,我们于网盘中提供了已训练模型. 当时使用的训练配置参考对应目录下的文件
 ```
 cd src/model_train
 python train_listwise_multi_types_1.py
@@ -137,7 +140,7 @@ best_model_dir_name 预测使用的model目录
 score_file 输出文件
 ```
 
-### 结果评价[完成整理]
+### 结果评价
 
 需要自行修改config文件, 位置在/config/eda/eval_test.yaml
 
