@@ -1,0 +1,40 @@
+# CCKS2019
+
+## Yih
+question_file: /data/dataset/CCKS2019/que_newType_test.txt
+score_file: /data/scores/CCKS2019_Yih_test.score
+candidate_file: /data/train_data/graph_ranker/CCKS2019_Yih/testset_model_data.txt
+dataset_flag: base
+
+# ## Luo
+# question_file: /data/dataset/CCKS2019/que_newType_test.txt
+# score_file: /data/scores/CCKS2019_Luo_test.score
+# candidate_file: /data/train_data/graph_ranker/CCKS2019_Luo/testset_model_data.txt
+# dataset_flag: base
+
+# ## Ours
+# question_file: /data/dataset/CCKS2019/que_newType_test.txt
+# score_file: /data/scores/CCKS2019_Ours_test.score
+# candidate_file: /data/train_data/graph_ranker/CCKS2019_Ours/testset_model_data.txt
+# dataset_flag: base
+
+
+# CCKS2019-Comp
+
+# ## Yih
+# question_file: /data/dataset/CCKS2019_CompType/que_newType_test.txt
+# score_file: /data/scores/CCKS2019_Comp_Yih_test.score
+# candidate_file: /data/train_data/graph_ranker/CCKS2019_CompType_Yih/testset_model_data.txt
+# dataset_flag: Comp
+
+# ## Luo
+# question_file: /data/dataset/CCKS2019_CompType/que_newType_test.txt
+# score_file: /data/scores/CCKS2019_Comp_Luo_test.score
+# candidate_file: /data/train_data/graph_ranker/CCKS2019_CompType_Luo/testset_model_data.txt
+# dataset_flag: Comp
+
+# ## Ours
+# question_file: /data/dataset/CCKS2019_CompType/que_newType_test.txt
+# score_file: /data/scores/CCKS2019_Comp_Ours_test.score
+# candidate_file: /data/train_data/graph_ranker/CCKS2019_CompType_Ours/testset_model_data.txt
+# dataset_flag: Comp

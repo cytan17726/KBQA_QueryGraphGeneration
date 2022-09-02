@@ -1,0 +1,4 @@
+gpu_id: 4
+infer_data: /data/train_data/graph_ranker/CCKS2019_CompType_Yih/testset_model_data.txt
+best_model_dir_name: /model/rank_model/CCKS2019_CompType_Yih_mainPathHead/30_1_42_100/0.9836711711711712_0.7588159668708767_3
+score_file: /data/scores/CCKS2019_Comp_Yih_test.score

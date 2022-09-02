@@ -1,0 +1,4 @@
+gpu_id: 7
+infer_data: /data/train_data/graph_ranker/CCKS2019_Ours/testset_model_data_pjzhangTop3_NoCheat.txt
+best_model_dir_name: /model/rank_model/CCKS2019_Ours_mainPathHead/20_1_42_100/0.9835707348656523_0.8868888834480331_4
+score_file: /data/scores/CCKS2019_Ours_test.score
