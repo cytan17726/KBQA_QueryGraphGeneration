@@ -1,4 +1,6 @@
-# [代码和数据整理中，请稍候](https://github.com/cytan17726/KBQA_QueryGraphGeneration/tree/cytan)
+# [面向知识图谱问答的查询图生成方法](https://github.com/cytan17726/KBQA_QueryGraphGeneration/tree/cytan)
+
+代码和数据整理中，请稍候
 
 ## 基本目录结构
 
@@ -100,7 +102,7 @@ nohup python main_based_filter_rel_for_test.py > log/CCKS2019_Comp_Ours_test.log
 
 ### 3 查询图排序
 
-1. 序列化[TODO]
+1. 序列化[TODO-test和valid已完成]
 ```
 cd src/querygraph2seq
 python querygraph_to_seq.py
@@ -110,7 +112,7 @@ python querygraph_to_seq.py
 ```
 cd src/build_model_data
 python build_train_data_for_analysis.py
-python build_test_data.py
+python build_test_data.py[sure]
 ```
 
 3. 训练排序模型[TODO-整理各部分的对应参数]
