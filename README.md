@@ -37,7 +37,7 @@ src 相关代码
 
 ## 快速复现实验结果
 
-我们在网盘中提供了各阶段性结果，包括：
+我们在网盘中提供了各阶段结果，包括：
 
 - 新构建KBQA数据(ch2,后续开放)
 - 预处理数据与模型(ch3.1, 关系预测提供训练后的模型)
@@ -50,8 +50,8 @@ src 相关代码
 
 |查询图生成性能|CCKS2019|CCKS2019-Comp|
 |:---:|:---:|:---:|
-|Yih等|85.40|71.07|
-|Luo等|86.49|71.93|
+|Yih等|85.13|71.07|
+|Luo等|86.23|71.93|
 |Ours|89.47|86.91|
 
 |KBQA性能|CCKS2019|CCKS2019-Comp|
@@ -78,11 +78,12 @@ src 相关代码
 
 ### 2 查询图生成(todo 修改传参方式)
 修改文件内的参数(对应 CCKS2019和CCKS2019-Comp两个数据集上的表现)
-cd src/build_query_graph
+
 
 - Yih
 
 ```
+cd src/build_query_graph
 nohup python main_Yih_for_test.py > log/CCKS2019_Yih_test.log&
 nohup python main_Yih_for_test.py > log/CCKS2019_Comp_Yih_test.log&
 ```
@@ -90,6 +91,7 @@ nohup python main_Yih_for_test.py > log/CCKS2019_Comp_Yih_test.log&
 - Luo
 
 ```
+cd src/build_query_graph
 nohup python main_Luo_for_test.py > log/CCKS2019_Luo_test.log&
 nohup python main_Luo_for_test.py > log/CCKS2019_Comp_Luo_test.log&
 ```
@@ -97,6 +99,7 @@ nohup python main_Luo_for_test.py > log/CCKS2019_Comp_Luo_test.log&
 - Our
 
 ```
+cd src/build_query_graph
 nohup python main_based_filter_rel_for_test.py > log/CCKS2019_Ours_test.log&
 nohup python main_based_filter_rel_for_test.py > log/CCKS2019_Comp_Ours_test.log&
 ```
@@ -118,9 +121,22 @@ python build_test_data.py[sure]
 ```
 
 3. 训练排序模型[TODO-整理各部分的对应参数]
+[非必要步骤]
 ```
 cd src/model_train
 python train_listwise_multi_types_1.py
+```
+
+4. 候选打分
+
+(重新进行打分)
+对应脚本存放在 /src/model_train/bash 目录,可按需修改config中参数(/config/eda)
+
+```
+gpu_id  显卡编号
+infer_data  构建的训练数据
+best_model_dir_name 预测使用的model目录
+score_file 输出文件
 ```
 
 ### 结果评价[完成整理]
