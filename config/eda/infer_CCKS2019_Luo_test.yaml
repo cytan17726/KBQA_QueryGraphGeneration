@@ -1,9 +1,4 @@
 gpu_id: 0
-infer_data: /data/train_data/graph_ranker/CCKS2019_Luo/testset_model_data_pjzhangTop3_NoCheat.txt
+infer_data: /data/train_data/graph_ranker/CCKS2019_Luo/testset_model_data.txt
 best_model_dir_name: /model/rank_model/CCKS2019_Luo_mainPathHead/30_1_42_100/0.9743567148396193_0.8860271498503711_2
 score_file: /data/scores/CCKS2019_Luo_test.score
-
-# gpu_id: 0
-# infer_data: /data/train_data/graph_ranker/CCKS2019_Luo_test/testset_model_data.txt
-# best_model_dir_name: /model/rank_model/CCKS2019_Luo_mainPathHead/30_1_42_100/0.9743567148396193_0.8860271498503711_2
-# score_file: /data/scores/CCKS2019_Luo_test_0902.score

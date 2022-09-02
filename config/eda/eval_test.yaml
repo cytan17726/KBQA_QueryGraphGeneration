@@ -1,16 +1,16 @@
 # CCKS2019
 
 ## Yih
-question_file: /data/dataset/CCKS2019/que_newType_test.txt
-score_file: /data/scores/CCKS2019_Yih_test.score
-candidate_file: /data/train_data/graph_ranker/CCKS2019_Yih/testset_model_data.txt
-dataset_flag: base
+# question_file: /data/dataset/CCKS2019/que_newType_test.txt
+# score_file: /data/scores/CCKS2019_Yih_test.score
+# candidate_file: /data/train_data/graph_ranker/CCKS2019_Yih/testset_model_data.txt
+# dataset_flag: base
 
 # ## Luo
-# question_file: /data/dataset/CCKS2019/que_newType_test.txt
-# score_file: /data/scores/CCKS2019_Luo_test.score
-# candidate_file: /data/train_data/graph_ranker/CCKS2019_Luo/testset_model_data.txt
-# dataset_flag: base
+question_file: /data/dataset/CCKS2019/que_newType_test.txt
+score_file: /data/scores/CCKS2019_Luo_test.score
+candidate_file: /data/train_data/graph_ranker/CCKS2019_Luo/testset_model_data.txt
+dataset_flag: base
 
 # ## Ours
 # question_file: /data/dataset/CCKS2019/que_newType_test.txt
