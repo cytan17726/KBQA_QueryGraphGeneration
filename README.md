@@ -64,7 +64,9 @@ src 相关代码
 ### 0 数据库构建(TODO)
 
 您可以基于[CCKS2019 中文知识图谱问答](https://www.biendata.xyz/competition/ccks_2019_6/data/)提供的数据, 构建KB
+
 本系统使用Mysql数据库进行KB的存储与检索
+
 更多详细信息后续添加完善
 
 ### 1 预处理
