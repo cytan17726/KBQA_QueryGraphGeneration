@@ -147,4 +147,4 @@ bash eval_test.sh
 需要对应修改config文件, 位置在/config/eda/eval_test.yaml
 ```
 
-若有更多问题可联系 cytan17726@stu.suda.edu.cn (或许issues不常看)
+若有更多问题可联系 cytan17726@stu.suda.edu.cn (若 issues 不常看)
