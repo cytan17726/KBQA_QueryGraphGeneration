@@ -129,13 +129,22 @@ best_model_dir_name 预测使用的model目录
 score_file 输出文件
 ```
 
-### 结果评价
+### 4 结果评价
 
-需要自行修改config文件, 位置在/config/eda/eval_test.yaml
+查询图生成
+
+```
+cd /src/build_query_graph
+python cal_recall_with_multi_types.py
+需要修改candsFile (line25起)，即需要评价的查询图候选文件
+```
+
+查询图排序
 
 ```
 cd src/eda
 bash eval_test.sh
+需要对应修改config文件, 位置在/config/eda/eval_test.yaml
 ```
 
 若有更多问题可联系 cytan17726@stu.suda.edu.cn

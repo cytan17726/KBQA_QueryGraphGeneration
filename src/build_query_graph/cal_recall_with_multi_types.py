@@ -10,14 +10,8 @@ from src.utils.data_processing import readTrainFile, readCands, \
 from src.utils.cal_f1 import f1Item, processAnswerEntity, processAnswerValue
 
 if __name__ == "__main__":
-    '''评价 MaxF1, 平均候选数量，最大候选数量'''
-    # fileName = BASE_DIR + '/dataset/ccks2021/testset_zhengqiu.json'
-    # que2answer = readQue2AnswerFromTestset(fileName)
-    # 评价训练集和验证集时
-    # fileName = BASE_DIR + '/dataset/ccks2021/ccks2021_task13_train.txt'
-    # que2answer = readTrainFile(fileName)
-    # fileName = BASE_DIR + '/data/dataset/CCKS2019/train.txt'
-    # fileName = BASE_DIR + '/dataset/CCKS2019/valid.txt'
+    '''评价 F1_gen, 平均候选数量，最大候选数量'''
+    
     fileName = BASE_DIR + '/data/dataset/CCKS2019/test.txt'
     que2answer = readTrainFile(fileName)
     
@@ -27,6 +21,7 @@ if __name__ == "__main__":
 
     quetype2true = {}
     quetype2all = {}
+    
     '''CCKS2019'''
     # candsFile = BASE_DIR + '/data/candidates/CCKS2019_Yhi_test_top300000_0429DNS_100_1000_10000_100000_1000.txt'    # 85.13
     # candsFile = BASE_DIR + '/data/candidates/CCKS2019_Luo_test_top300000_0429DNS_100_1000_10000_100000_1000.txt'    # 86.23
@@ -35,11 +30,11 @@ if __name__ == "__main__":
     # candsFile = BASE_DIR + '/data/candidates/CCKS2019_Comp_Yhi_test_top300000_0429DNS_100_1000_10000_100000_1000.txt'   # 71.07
     # candsFile = BASE_DIR + '/data/candidates/CCKS2019_Comp_Luo_test_top300000_0429DNS_100_1000_10000_100000_1000.txt'   # 71.93
     candsFile = BASE_DIR + '/data/candidates/CCKS2019_Comp_Ours_test_2000_0429DNS_100_1000_10000_100000_1000.txt'   # 86.91
+    
     que2cands = readCands(candsFile)
     macroF1 = 0.0
     num = 0
     trueNum = 0
-    fout = open(BASE_DIR + '/data/candidates/tmp.txt', 'w', encoding='utf-8')
     scoreThreshold = 0.6
     Max_can_num = 0
     Sum_can_num = 0
@@ -80,18 +75,7 @@ if __name__ == "__main__":
                     # import pdb;pdb.set_trace()
                     # print(cand)
             if(maxF1 < scoreThreshold):
-                # import pdb;pdb.set_trace()
-                fout.write(que + '\t' + str(maxF1) + '\n')
-                # fout.write(best_pred_path+'\n')
-                fout.write(best_pred_ans+'\n')
-                fout.write(str(len(que2answer[que].split('\t'))) + '\t' + que2answer[que] + '\n')
-                # import pdb; pdb.set_trace()
-                # fout.write(que2sparql[que] + '\n')
-                # for cand in cands:
-                #     fout.write(str(cand) + '\n')
-                # fout.write('\n')
                 num += 1
-                # print('未召回的问句：', que)
             elif(maxF1 >= scoreThreshold):
                 trueNum += 1
             else:
@@ -118,16 +102,10 @@ if __name__ == "__main__":
     print('que num: %d'%que_num)
     print('Max can num: %d'%Max_can_num)
     print('ave can num: {} = {} / {}'.format(Sum_can_num/len(que2cands), Sum_can_num, len(que2cands)))
-    print('MaxF1: {} = {} / {}'.format(macroF1 / len(que2cands), macroF1, len(que2cands)))
+    print('F1_gen: {} = {} / {}'.format(macroF1 / len(que2cands), macroF1, len(que2cands)))
     for quetype in type2can:
         data = type2can[quetype]
         ave_num = sum(data)/len(data)
         print('{}\tmax_can: {}, ave_num: {:.4f}'.format(quetype,max(data),ave_num))
-    # if('testset' in candsFile):
-    #     print(macroF1, len(que2cands), macroF1 / len(que2cands))
-    # elif('dev' in candsFile):
-    #     print(macroF1, len(que2cands), macroF1 / len(que2cands))
-    # else:
-    #     print(macroF1, len(que2cands), macroF1 / len(que2cands))
 
 
