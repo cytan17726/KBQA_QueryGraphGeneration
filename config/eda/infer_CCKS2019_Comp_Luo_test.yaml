@@ -1,4 +1,4 @@
-gpu_id: 5
+gpu_id: 2
 infer_data: /data/train_data/graph_ranker/CCKS2019_CompType_Luo/testset_model_data.txt
 best_model_dir_name: /model/rank_model/CCKS2019_CompType_Luo_mainPathHead/10_1_42_100/0.9934761597938144_0.7633965245489926_3
 score_file: /data/scores/CCKS2019_Comp_Luo_test.score

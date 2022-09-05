@@ -1,4 +1,4 @@
-gpu_id: 6
-infer_data: /data/train_data/graph_ranker/0504_CCKS2019_CompType_Ours/testset_model_data.txt
+gpu_id: 3
+infer_data: /data/train_data/graph_ranker/CCKS2019_CompType_Ours/testset_model_data.txt
 best_model_dir_name: /model/rank_model/CCKS2019_CompType_Ours_mainPathHead/30_1_42_100/0.975280199252802_0.8764751122698193_4
 score_file: /data/scores/CCKS2019_Comp_Ours_test.score

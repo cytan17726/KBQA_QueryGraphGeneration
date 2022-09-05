@@ -622,7 +622,6 @@ if __name__ == "__main__":
         for N in [20]:
             train_batch_size = 1
             logger = logging.getLogger(__name__)
-            print(seed)
             parser = ArgumentParser(description = 'For KBQA')
             parser.add_argument("--task_name",default='mrpc',type=str,help="The name of the task to train.")
             parser.add_argument("--config_file",default='',type=str)
