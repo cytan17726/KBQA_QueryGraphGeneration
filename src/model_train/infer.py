@@ -651,7 +651,7 @@ if __name__ == "__main__":
             torch.cuda.manual_seed_all(args.seed)   
 
             config = yaml.safe_load(open(args.config_file,'r'))
-            os.environ["CUDA_VISIBLE_DEVICES"] = config['gpu_id']
+            os.environ["CUDA_VISIBLE_DEVICES"] = str(config['gpu_id'])
             args_dict = vars(args)
             # exit()
             infer_data = BASE_DIR + config['infer_data']
