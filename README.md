@@ -1,18 +1,5 @@
 # [面向知识图谱问答的查询图生成方法](https://github.com/cytan17726/KBQA_QueryGraphGeneration/tree/master)
 
-代码和数据整理中，请稍候(在重新测试...在肝了在肝了)
-
-## 基本目录结构
-
-config 若干参数
-
-data 相关数据
-    train_data
-        graph_ranker: 相关排序模型的训练数据
-
-model 训练的模型
-
-src 相关代码
 
 ## Setups
 
@@ -39,12 +26,14 @@ src 相关代码
 
 我们在网盘中提供了各阶段结果，包括：
 
-- 新构建KBQA数据(ch2,后续开放)
-- 预处理数据与模型(ch3.1, 关系预测提供训练后的模型)
-- 查询图生成-阶段结果(ch3.2)
-- 查询图排序-训练数据(ch3.3)
-- 查询图排序-已训练模型(ch3.3)
-- 查询图排序-打分结果(ch3.3)
+- 新构建KBQA数据(ch2,后续开放结构更清晰的独立版本)
+- 预处理数据与模型(关系预测提供训练后的模型)
+    - 输入数据 (/data/dataset)
+    - 关系预测模型 (/model/que_rel_sim)
+- 查询图生成-阶段结果(/data/candidates)
+- 查询图排序-训练数据(/data/train_data/graph_ranker)
+- 查询图排序-已训练模型(/model/rank_model)
+- 查询图排序-打分结果(/data/scores)
 
 我们在本地评估性能结果如下,可作为您的参考:
 
@@ -61,7 +50,7 @@ src 相关代码
 |Ours|73.86|73.39|
 
 
-### 0 数据库构建(TODO)
+### 0 数据库构建(后续完善)
 
 您可以基于[CCKS2019 中文知识图谱问答](https://www.biendata.xyz/competition/ccks_2019_6/data/)提供的数据, 构建KB
 
@@ -104,7 +93,7 @@ nohup python main_based_filter_rel_for_test.py > log/CCKS2019_Comp_Ours_test.log
 ```
 
 
-### 3 查询图排序(进行中)
+### 3 查询图排序(已完成)
 
 1. 序列化
 需要调整文件中的对应参数(参考注释)
