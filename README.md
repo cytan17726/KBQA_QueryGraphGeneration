@@ -120,8 +120,8 @@ python train_listwise_multi_types_1.py
 
 4. 候选打分
 
-对应脚本存放在 /src/model_train/bash 目录,可按需修改config中参数(/config/eda)
-
+对应脚本为`src/model_train/infer.sh`
+可按需修改config中参数(/config/eda)
 ```
 gpu_id  显卡编号
 infer_data  构建的训练数据
