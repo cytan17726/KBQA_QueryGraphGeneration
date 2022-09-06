@@ -1,18 +1,18 @@
 # CCKS2019
 
-## Yih
+## Yih 72.17
 # question_file: /data/dataset/CCKS2019/que_newType_test.txt
 # score_file: /data/scores/CCKS2019_Yih_test.score
 # candidate_file: /data/train_data/graph_ranker/CCKS2019_Yih/testset_model_data.txt
 # dataset_flag: base
 
-# ## Luo
-question_file: /data/dataset/CCKS2019/que_newType_test.txt
-score_file: /data/scores/CCKS2019_Luo_test.score
-candidate_file: /data/train_data/graph_ranker/CCKS2019_Luo/testset_model_data.txt
-dataset_flag: base
+## Luo 73.29
+# question_file: /data/dataset/CCKS2019/que_newType_test.txt
+# score_file: /data/scores/CCKS2019_Luo_test.score
+# candidate_file: /data/train_data/graph_ranker/CCKS2019_Luo/testset_model_data.txt
+# dataset_flag: base
 
-# ## Ours
+# ## Ours 73.86
 # question_file: /data/dataset/CCKS2019/que_newType_test.txt
 # score_file: /data/scores/CCKS2019_Ours_test.score
 # candidate_file: /data/train_data/graph_ranker/CCKS2019_Ours/testset_model_data.txt
@@ -21,19 +21,19 @@ dataset_flag: base
 
 # CCKS2019-Comp
 
-# ## Yih
+# ## Yih 59.50
 # question_file: /data/dataset/CCKS2019_CompType/que_newType_test.txt
 # score_file: /data/scores/CCKS2019_Comp_Yih_test.score
 # candidate_file: /data/train_data/graph_ranker/CCKS2019_CompType_Yih/testset_model_data.txt
 # dataset_flag: Comp
 
-# ## Luo
+# ## Luo 60.66
 # question_file: /data/dataset/CCKS2019_CompType/que_newType_test.txt
 # score_file: /data/scores/CCKS2019_Comp_Luo_test.score
 # candidate_file: /data/train_data/graph_ranker/CCKS2019_CompType_Luo/testset_model_data.txt
 # dataset_flag: Comp
 
-# ## Ours
+# ## Ours 73.39
 # question_file: /data/dataset/CCKS2019_CompType/que_newType_test.txt
 # score_file: /data/scores/CCKS2019_Comp_Ours_test.score
 # candidate_file: /data/train_data/graph_ranker/CCKS2019_CompType_Ours/testset_model_data.txt
