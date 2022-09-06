@@ -7,5 +7,3 @@ class CCKSConfig(object):
         self.password = 'XX'
         self.database = 'XX'
         self.charset = 'XXX'
-
-
