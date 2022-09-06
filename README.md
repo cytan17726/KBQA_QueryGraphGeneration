@@ -1,7 +1,5 @@
 # [面向知识图谱问答的查询图生成方法](https://github.com/cytan17726/KBQA_QueryGraphGeneration/tree/master)
 
-<!-- [⚙️Installation](#️installation) | [🚀Quick Start](#quick-start) | [💾Data Preprocessing](#data-preprocessing) | [📋Reproduction](#reproduction)| [⚽Find Pseudo Triggers](#find-pseudo-triggers) | [📚Instructions](#instructions) | [🙋FAQ](#faq) | [📜Citation](#citation) | [🔑Licence](#licence) | [🤘Furthermore](#furthermore) -->
-
 hi! 你好!
 
 本项目是关于一种查询图生成方法的实现代码，用于知识图谱问答。其中还附有我们构建的一份含有多种复杂句的中文知识图谱问答数据集(CCKS2019_Comp/)
@@ -53,7 +51,7 @@ hi! 你好!
 |Luo等|73.29|60.66|
 |Ours|73.86|73.39|
 
-### 0 数据库构建(后续完善)
+### 0️⃣ 数据库构建(后续完善)
 
 您可以基于[CCKS2019 中文知识图谱问答](https://www.biendata.xyz/competition/ccks_2019_6/data/)提供的数据, 构建KB
 
@@ -68,7 +66,7 @@ hi! 你好!
     节点识别, 提供实体词节点的识别结果, 其余内嵌在代码中
     关系预测提供已训练模型
 
-### 2 查询图生成(已完成)
+### 2️⃣ 查询图生成(已完成)
 修改文件内的参数(对应 CCKS2019和CCKS2019-Comp两个数据集上的表现)
 
 - Yih
@@ -103,7 +101,7 @@ nohup python main_based_filter_rel_for_test.py > log/CCKS2019_Ours_test.log&
 nohup python main_based_filter_rel_for_test.py > log/CCKS2019_Comp_Ours_test.log&
 ```
 
-### 3 查询图排序(已完成)
+### 3️⃣ 查询图排序(已完成)
 
 3.1 序列化
 
@@ -152,7 +150,7 @@ cd src/model_train/
 bash infer.sh
 ```
 
-### 4 结果评价
+### 4️⃣ 结果评价
 
 4.1 查询图生成
 
@@ -174,4 +172,4 @@ bash eval_test.sh
 
 ## 后续工作、问题与建议
 
-这是我初次进行相关工作, 请各位老师多多批评指正, 我会及时改正。若有更多问题可联系: cytan17726@stu.suda.edu.cn
+这是我初次进行相关工作, 上述内容可能不甚完善。请各位老师多多批评指正, 我会及时调整。未尽事宜可联系: cytan17726@stu.suda.edu.cn
