@@ -13,7 +13,7 @@ hi! 你好!
 - python 3.6.7
   - `torch`==1.4.0
   - `pytorch_pretrained_bert`==0.6.2
-  - `scikit-learn`==.20.4
+  - `scikit-learn`==0.20.4
   - `xgboost`==1.4.1
   - `pymysql`==1.0.2
   - `jieba`==0.42.1
