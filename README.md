@@ -1,4 +1,4 @@
-# [面向知识图谱问答的查询图生成方法](https://github.com/cytan17726/KBQA_QueryGraphGeneration/tree/master)
+# 面向知识图谱问答的查询图生成方法
 
 hi! 你好!
 
