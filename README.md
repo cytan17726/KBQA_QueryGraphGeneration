@@ -23,7 +23,8 @@ hi! 你好!
   - `yaml`
 
 训练的模型和部分中间结果:
-[下载地址(百度网盘)](https://pan.baidu.com/s/1HuhSBWa2_EYRhpVG1tMo6w ), 提取码: dn7h
+~~[下载地址(百度网盘)](https://pan.baidu.com/s/1HuhSBWa2_EYRhpVG1tMo6w ), 提取码: dn7h~~
+`链接分享被封禁, 处理中`
 
 ## 🚀快速复现实验结果
 
