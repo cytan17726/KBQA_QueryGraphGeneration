@@ -23,8 +23,7 @@ hi! 你好!
   - `yaml`
 
 训练的模型和部分中间结果:
-~~[下载地址(百度网盘)](https://pan.baidu.com/s/1HuhSBWa2_EYRhpVG1tMo6w ), 提取码: dn7h~~
-`链接分享被封禁, 处理中`
+[下载地址(百度网盘)](https://pan.baidu.com/s/1S1AF3CLdvleG3hYHd3ptaw),提取码: bey8
 
 ## 🚀快速复现实验结果
 
@@ -55,6 +54,8 @@ hi! 你好!
 ### 0️⃣ 数据库构建(后续完善)
 
 您可以基于[CCKS2019 中文知识图谱问答](https://www.biendata.xyz/competition/ccks_2019_6/data/)提供的数据, 构建KB
+
+有朋友反馈上述连接中的KB已无法下载，您可以至官网下载PKUBASE 或 使用[CCKS2022：开放知识图谱问答](https://www.biendata.xyz/competition/ccks2020_ckbqa/)提供的KB
 
 本系统使用Mysql数据库进行KB的存储与检索
 
