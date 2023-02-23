@@ -23,7 +23,9 @@ hi! 你好!
   - `yaml`
 
 训练的模型和部分中间结果:
-[下载地址(百度网盘)](https://pan.baidu.com/s/1S1AF3CLdvleG3hYHd3ptaw),提取码: bey8
+~~[下载地址(百度网盘)](https://pan.baidu.com/s/1S1AF3CLdvleG3hYHd3ptaw),提取码: bey8~~
+
+链接被和谐，处理中
 
 ## 🚀快速复现实验结果
 
