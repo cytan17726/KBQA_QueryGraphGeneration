@@ -22,8 +22,9 @@ hi! 你好!
   - `tqdm`
   - `yaml`
 
-训练的模型和部分中间结果:
-[下载地址(百度网盘-20230223)](https://pan.baidu.com/s/1n162HG0OmBAL7qp0_QbG9Q?pwd=puo5)
+训练的模型和部分中间结果下载地址:<br>
+[~~百度网盘-20230316~~ __(频繁失效，后续不再维护)__](https://pan.baidu.com/s/1n162HG0OmBAL7qp0_QbG9Q?pwd=puo5)<br>
+[__Google Drive-20230316__](https://drive.google.com/drive/folders/1jRQ65bDpQyyMZRheJnZTVnaVXRzCy83n?usp=sharing)
 
 ## 🚀快速复现实验结果
 
