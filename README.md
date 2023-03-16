@@ -23,7 +23,7 @@ hi! 你好!
   - `yaml`
 
 训练的模型和部分中间结果下载地址:<br>
-[~~百度网盘-20230316~~ __(频繁失效，后续不再维护)__](https://pan.baidu.com/s/1n162HG0OmBAL7qp0_QbG9Q?pwd=puo5)<br>
+[__百度网盘-20230316__](https://pan.baidu.com/s/1n162HG0OmBAL7qp0_QbG9Q?pwd=puo5) (__频繁失效，后续不再维护，若失效请勿联系索要新链接__)<br>
 [__Google Drive-20230316__](https://drive.google.com/drive/folders/1jRQ65bDpQyyMZRheJnZTVnaVXRzCy83n?usp=sharing)
 
 ## 🚀快速复现实验结果
